@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Vugandakumva</title>
+    <style>
+      .static-safety {
+        position: fixed;
+        inset: 0 0 auto;
+        z-index: 1000;
+        font:
+          16px/1.5 system-ui,
+          sans-serif;
+        padding: 16px;
+        background: #1b5e20;
+        color: #fff;
+      }
+      .static-safety a {
+        display: inline-flex;
+        align-items: center;
+        min-width: 44px;
+        min-height: 44px;
+        margin: 4px;
+        color: inherit;
+      }
+      .static-safety a:focus-visible {
+        outline: 3px solid #1d4ed8;
+        outline-offset: 2px;
+        box-shadow: 0 0 0 7px #fff;
+      }
+      .static-safety p {
+        color: inherit;
+        max-width: 70ch;
+      }
+      html[data-ready="true"] .static-safety {
+        display: none;
+      }
+    </style>
+    <link
+      rel="preload"
+      href="/node_modules/@fontsource/dm-sans/files/dm-sans-latin-400-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/node_modules/@fontsource/dm-sans/files/dm-sans-latin-700-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/hero-courtyard.webp"
+      imagesrcset="/assets/hero-courtyard-small.webp 600w, /assets/hero-courtyard-medium.webp 800w, /assets/hero-courtyard.webp 1100w"
+      imagesizes="50vw"
+      media="(min-width: 768px)"
+      fetchpriority="high"
+    />
+  </head>
+  <body>
+    <!-- STATIC_SAFETY -->
+    <noscript
+      ><style>
+        .menu-toggle,
+        .languages,
+        .quick-exit,
+        .safety-notice button {
+          display: none !important;
+        }
+        .main-nav {
+          display: flex !important;
+          position: static !important;
+          flex-wrap: wrap;
+          box-shadow: none;
+        }
+        .header-inner {
+          flex-wrap: wrap;
+        }
+        .static-safety {
+          position: relative;
+        }
+        .hero-section button {
+          display: none;
+        }
+      </style></noscript
+    >
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx" fetchpriority="low"></script>
+  </body>
+</html>
